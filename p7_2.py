@@ -74,7 +74,7 @@ def distortion(fs, gain, level, x):
 # s, fs = sf.read("p7_2(input).wav")
 s, fs = sf.read("yamada.wav")
 
-gain = 1000
-level = 0.01
+gain = 200
+level = 0.1
 s = distortion(fs, gain, level, s)
 sf.write("p7_2(output).wav", s.copy(), fs)
